@@ -15,7 +15,7 @@ Request your project here:
 - **VERY IMPORTANT** Don't forget to **add a volume request**.
 - Projects without volumes won't have storage for persistent data.
 
-The evaluation process takes a few weeks, and the NECTAR team will notify you. Once you are granted a project, please continue to the following steps.          
+The evaluation process takes a few weeks, and the NECTAR team will notify you. Once you are granted a project, please continue to the following steps.
 
 ---
 
