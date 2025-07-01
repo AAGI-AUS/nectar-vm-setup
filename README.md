@@ -15,6 +15,8 @@ Request your project here:
 - **VERY IMPORTANT** Don't forget to **add a volume request**.
 - Projects without volumes won't have storage for persistent data.
 
+The evaluation process takes a few weeks, and the NECTAR team will notify you. Once you are granted a project, please continue to the following steps.
+
 ---
 
 ## Step 2: Create an SSH Group Ingress Rule
@@ -32,13 +34,16 @@ Set up a security group to allow SSH access:
 ## Step 3: Launch Your First Instance (VM)
 
 Follow this guide:  
-[Launch Instance Guide](https://tutorials.rc.nectar.org.au/launching-virtual-machines/05-launch-instance)
+[Launch Instance Guide](https://tutorials.rc.nectar.org.au/launching-virtual-machines/02-launch-dialog)
 
-- **Choose a flavour** (e.g. `m2.medium`, `m3.large`) based on your needs.
-- **Select an OS** like Ubuntu 22.04.
+Go to "Compute" → "Instances" → "Launch Instance"
+- Add Details information
+- **Select an OS - Source** like NECTAR Ubuntu 22.04 LTS (Jammy) amd64.
+- **Choose a flavour** (e.g. `m2.medium`, `m3.large`) based on your needs and resources
 - Assign the `ssh-access` group created in step 2.
 - **Generate your SSH key** (download the private key to your local machine).
 - Wait until the instance is in a **"Running"** state and has a **Floating IP**.
+- "Launch instance" with the bottom yellow button after applying all the changes.
 
 ---
 
@@ -54,7 +59,7 @@ Follow this guide:
 
 ## Step 5: SSH Into Your Instance
 
-Fix permissions for the SSH key:
+Fix permissions for the SSH key, from step 3:
 ```bash
 chmod 600 your_key
 ```
@@ -76,6 +81,8 @@ Replace:
 
 Reference:  
 🔗 [Format and Mount a Volume](https://tutorials.rc.nectar.org.au/volume-storage/04-format-mount)
+
+In the VM instance: 
 
 1. Check the volume:
     ```bash
